@@ -7,7 +7,7 @@ public enum MessageStatus {
 
     PENDING("대기"),
     SUCCESS("승인"),
-    FAIL("상태");
+    FAIL("실패");
 
     private final String status;
 

@@ -28,10 +28,10 @@ public abstract class BaseTimeEntity {
 
     @CreatedBy
     @Column(updatable = false, nullable = false)
-    private Long createdId;
+    private Long createdBy;
 
     @LastModifiedBy
-    private Long updatedId;
+    private Long updatedBy;
 
-    private Long deletedId;
+    private Long deletedBy;
 }
