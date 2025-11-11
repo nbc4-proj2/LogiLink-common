@@ -34,4 +34,9 @@ public abstract class BaseTimeEntity {
     private Long updatedBy;
 
     private Long deletedBy;
+
+    public void softDelete(Long userId) {
+        this.deletedAt = LocalDateTime.now();
+        this.deletedBy = userId;
+    }
 }
